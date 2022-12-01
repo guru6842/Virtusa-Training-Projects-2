@@ -1,0 +1,21 @@
+create database mydb;
+use mydb;
+
+create table user_dataBase (uname varchar(20),password varchar(20));
+
+insert into user_dataBase values("admin","admin");
+select * from user_dataBase;
+
+
+create table students(id int not null primary key,
+sname varchar(30) not null,
+gender varchar(10) not null,
+grade varchar(10) not null,
+fatherName varchar(30),
+PhoneNo varchar(10));
+
+create table teachers(tname varchar(30) not null,
+gender varchar(10) not null,
+sub varchar(20) not null,
+phoneNo varchar(10) not null primary key,
+mail varchar(30));
